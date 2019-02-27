@@ -39,22 +39,22 @@ console.log(orc.attack());
 
 // code example for New Binding
 
-// const student = {
-//     name: "Sean"
-// }
+const student = {
+    name: "Sean"
+}
 
-// const worker = {
-//     name: "Bob"
-// }
+const worker = {
+    name: "Bob"
+}
 
-// const abilities = ["Doin this", "doin that", "and da otha ting"];
+const abilities = ["Doin this", "doin that", "and da otha ting"];
 
-// function activate(abilities1, abilities2, abilities3) {
-//     debugger;
-//     return `Hi! My name is: ${this.name} and this is what I do: ${abilities1}, ${abilities2}, ${abilities3},`
-// }
+function activate(abilities1, abilities2, abilities3) {
+    debugger;
+    return `Hi! My name is: ${this.name} and this is what I do: ${abilities1}, ${abilities2}, ${abilities3},`
+}
 
-// console.log(acivate.call(student, abilities))
+console.log(activate.call(student, abilities))
 
 
 // Principle 4
