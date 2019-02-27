@@ -1,9 +1,11 @@
 /*
-  Object oriented design is commonly used in video games.  For this part of the assignment you will be implementing several constructor functions with their correct inheritance hierarchy.
+  Object oriented design is commonly used in video games.  For this part of the assignment you will be implementing several constructor functions with their 
+  correct inheritance hierarchy.
 
   In this file you will be creating three constructor functions: GameObject, CharacterStats, Humanoid.  
 
-  At the bottom of this file are 3 objects that all end up inheriting from Humanoid.  Use the objects at the bottom of the page to test your constructor functions.
+  At the bottom of this file are 3 objects that all end up inheriting from Humanoid.  Use the objects at the bottom of the page to test your constructor 
+  functions.
   
   Each constructor function has unique properties and methods that are defined in their block comments below:
 */
@@ -15,6 +17,21 @@
   * dimensions (These represent the character's size in the video game)
   * destroy() // prototype method that returns: `${this.name} was removed from the game.`
 */
+
+function GameObject(attributes) {
+  this.createdAt = attributes.age;
+  this.name = attributes.name;
+}
+  GameObject.prototype.dimensions = function() {
+    this.lenth, 
+    this.width, 
+    this.height;
+}
+
+GameObject.prototype.destroy = function() {
+  return `&{this.name} was removed from the game.`;
+}
+
 
 /*
   === CharacterStats ===
