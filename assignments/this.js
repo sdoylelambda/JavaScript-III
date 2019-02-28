@@ -50,7 +50,6 @@ const worker = {
 const abilities = ["Doin this", "doin that", "and da otha ting"];
 
 function activate(abilities1, abilities2, abilities3) {
-    debugger;
     return `Hi! My name is: ${this.name} and this is what I do: ${abilities1}, ${abilities2}, ${abilities3},`
 }
 
